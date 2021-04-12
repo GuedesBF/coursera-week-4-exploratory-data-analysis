@@ -51,6 +51,6 @@ plot6.2<-plot6_df%>%group_by(city)%>%ggplot(aes(y=cummulative_change, x=year, fi
         labs(fill='direction of change')+
         ggtitle('Cummulative change since 1999')
 
-png('Plot6.png')
+png('Plot6.png', width = 720)
 plot_grid(plot6.1, plot6.2)
 dev.off()
